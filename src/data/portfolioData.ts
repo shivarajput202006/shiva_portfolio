@@ -1,0 +1,360 @@
+import {
+  SkillItem,
+  ProjectItem,
+  EducationItem,
+  CertificateItem,
+  JourneyStep,
+} from '../types/portfolio';
+
+export const personalInfo = {
+  name: 'Shiva Rajput',
+  role: 'MCA Student | Java Full-Stack Developer | Software Developer',
+  headline: "Hi, I'm Shiva Rajput",
+  shortBio:
+    "I'm an MCA student building modern web applications with Java, Spring Boot, MongoDB and modern frontend technologies. I enjoy solving problems, learning new technologies and creating impactful software solutions.",
+  aboutText:
+    'I am Shiva Rajput, currently pursuing MCA. I have a strong interest in Java, backend development, databases and web technologies. I enjoy building real-world projects and continuously improving my skills to become a professional software developer.',
+  location: 'Agra, Uttar Pradesh, India',
+  email: 'shivarajput111981@gmail.com',
+  phone: '8218078418',
+  github: 'https://github.com/shivarajput202006',
+  githubUsername: 'shivarajput202006',
+  linkedin: 'https://www.linkedin.com/in/shiva-rajput-a38525296',
+  status: 'Open to Opportunities',
+  resumeUrl: '/final.pdf',
+  typingRoles: [
+    'Java Developer',
+    'Backend Developer',
+    'Full-Stack Developer',
+    'Problem Solver',
+  ],
+};
+
+export const skillsData: SkillItem[] = [
+  {
+    id: 'java',
+    name: 'Java',
+    category: 'core',
+    level: 'Strong',
+    value: 86,
+    description: 'Core OOP, Collections framework, Exception handling, Multi-threading & JVM runtime.',
+    iconName: 'Code2',
+  },
+  {
+    id: 'oop',
+    name: 'OOP',
+    category: 'core',
+    level: 'Strong',
+    value: 84,
+    description: 'Encapsulation, Polymorphism, Abstraction, Inheritance, and Clean Architecture patterns.',
+    iconName: 'Boxes',
+  },
+  {
+    id: 'dsa',
+    name: 'DSA',
+    category: 'core',
+    level: 'Building',
+    value: 72,
+    description: 'Arrays, Two Pointers, Searching, Sorting, Linked Lists, Stacks & Problem Solving.',
+    iconName: 'Binary',
+  },
+  {
+    id: 'python',
+    name: 'Python',
+    category: 'core',
+    level: 'Building',
+    value: 75,
+    description: 'Python syntax, data manipulation, algorithmic problem solving & AI foundation concepts.',
+    iconName: 'FileCode',
+  },
+  {
+    id: 'springboot',
+    name: 'Spring Boot',
+    category: 'backend',
+    level: 'Learning',
+    value: 65,
+    description: 'Spring MVC, Dependency Injection, REST Controllers, Spring Data JPA & JWT auth.',
+    iconName: 'Server',
+  },
+  {
+    id: 'restapi',
+    name: 'REST APIs',
+    category: 'backend',
+    level: 'Strong',
+    value: 76,
+    description: 'API design, JSON serialization, HTTP status conventions, Swagger & Postman testing.',
+    iconName: 'Network',
+  },
+  {
+    id: 'htmlcss',
+    name: 'HTML & CSS',
+    category: 'frontend',
+    level: 'Strong',
+    value: 88,
+    description: 'Semantic markup, Modern CSS3 Flexbox/Grid, Responsive layouts & Animations.',
+    iconName: 'FileCode2',
+  },
+  {
+    id: 'javascript',
+    name: 'JavaScript',
+    category: 'frontend',
+    level: 'Building',
+    value: 74,
+    description: 'ES6+ features, Async/Await, Promises, DOM Manipulation, Fetch API & Event Handling.',
+    iconName: 'Code',
+  },
+  {
+    id: 'bootstrap',
+    name: 'Bootstrap',
+    category: 'frontend',
+    level: 'Strong',
+    value: 82,
+    description: 'Rapid UI prototyping, Grid systems, Utility classes & Adaptive responsive styling.',
+    iconName: 'LayoutGrid',
+  },
+  {
+    id: 'mysql',
+    name: 'MySQL',
+    category: 'backend',
+    level: 'Strong',
+    value: 80,
+    description: 'Relational schema design, Complex SQL queries, Joins, Indexing & ACID compliance.',
+    iconName: 'Database',
+  },
+  {
+    id: 'mongodb',
+    name: 'MongoDB',
+    category: 'backend',
+    level: 'Building',
+    value: 68,
+    description: 'NoSQL document models, Collections, Mongoose schemas, Indexing & CRUD pipelines.',
+    iconName: 'DatabaseBackup',
+  },
+  {
+    id: 'git',
+    name: 'Git & GitHub',
+    category: 'tools',
+    level: 'Strong',
+    value: 78,
+    description: 'Version control workflows, Branching, Merges, Commit discipline & Pull Requests.',
+    iconName: 'GitBranch',
+  },
+  {
+    id: 'ide',
+    name: 'VS Code / Eclipse',
+    category: 'tools',
+    level: 'Strong',
+    value: 80,
+    description: 'Java build tool integrations, Debugger stepping, Extensions & Workspace configs.',
+    iconName: 'Terminal',
+  },
+];
+
+export const projectsData: ProjectItem[] = [
+  {
+    id: 'hostel-management',
+    number: '01',
+    title: 'Hostel Management System',
+    subtitle: 'Institutional Student Living & Operations Suite',
+    description:
+      'A complete hostel management system with admin and student login, room allocation, fee management and complaint features.',
+    problemSolved:
+      'Hostel wardens and administrators were encumbered by manual physical ledgers, creating frequent room allocation conflicts, misplaced fee slips, and overlooked maintenance grievances.',
+    role: 'Full-Stack Developer — Built database schema, backend business logic, and structured responsive web interface.',
+    technologies: ['Java', 'Spring Boot', 'MongoDB', 'Bootstrap'],
+    features: [
+      'Role-based authentication for Administrators and Residents',
+      'Intelligent room allocation and real-time occupancy tracking',
+      'Digital fee dues management and auto receipt generation',
+      'Student maintenance complaint ticketing with resolution tracking',
+      'Clean responsive layout compatible with mobile and desktop devices',
+    ],
+    githubUrl: 'https://github.com/shivarajput202006',
+    liveUrl: '#contact',
+    featured: true,
+    accentColor: '#3b82f6',
+  },
+  {
+    id: 'scamshield-ai',
+    number: '02',
+    title: 'ScamShield – AI-Powered Scam Risk Detection System',
+    subtitle: 'Intelligent Fraud & Phishing Threat Analyzer',
+    description:
+      'ScamShield is an AI-powered platform that analyzes suspicious messages, job offers, emails, and URLs to identify potential scam indicators. It provides risk assessment and clear explanations to help users recognize suspicious online content.',
+    problemSolved:
+      'Digital scamming, spoofed recruitment messages, and fraudulent phishing links are increasingly deceptive. ScamShield provides non-technical users with instant explainable indicators before they fall victim.',
+    role: 'Lead Architect & Engineer — Orchestrated AI API inference pipelines, Spring Security layer with JWT, and reactive frontend analysis dashboard.',
+    technologies: [
+      'Java',
+      'Spring Boot',
+      'React.js',
+      'MongoDB',
+      'REST API',
+      'AI API',
+      'Spring Security',
+      'JWT',
+    ],
+    features: [
+      'Multi-vector scam classification (SMS, Job offers, Payment emails, URLs)',
+      'Explainable AI score with breakdown of deceptive language signals',
+      'Stateless secure authentication powered by Spring Security & JWT',
+      'Historical risk analysis audit logs stored securely in MongoDB',
+      'Instant interactive copy-paste scanner with high-contrast indicator flags',
+    ],
+    githubUrl: 'https://github.com/shivarajput202006',
+    liveUrl: '#contact',
+    featured: true,
+    accentColor: '#06b6d4',
+  },
+];
+
+export const educationData: EducationItem[] = [
+  {
+    period: '2026 — Present',
+    degree: 'Master of Computer Applications (MCA)',
+    institution: 'Hindustan College of Science and Technology, Mathura',
+    status: 'In Progress',
+    highlights: [
+      'Advanced Software Engineering and Distributed Architectures',
+      'Backend Systems, Advanced Database Management & API Design',
+      'Algorithm Analysis, Complexity Theory & Cloud Deployment basics',
+    ],
+  },
+  {
+    period: '2023 — 2026',
+    degree: 'Bachelor of Computer Applications (BCA)',
+    institution: 'Dr. MPS Group of Institutions, Agra',
+    status: 'Graduated',
+    highlights: [
+      'Core Programming in Java, C, and Object-Oriented Methodologies',
+      'Relational Database Management Systems (RDBMS) & SQL Mastery',
+      'Web Development Foundations, Software Project Lifecycle & Data Structures',
+    ],
+  },
+];
+
+export const certificationsData: CertificateItem[] = [
+  {
+    id: 'cisco-ai',
+    title: 'Introduction to Modern AI',
+    specialization: 'Artificial Intelligence Concepts, Machine Learning Foundations & Ethics',
+    issuer: 'Cisco Networking Academy',
+    code: '01',
+    skills: ['Modern AI', 'Machine Learning', 'AI Ethics', 'Data Foundations'],
+  },
+  {
+    id: 'tcs-ai-foundation',
+    title: 'TCS iON Career Edge - AI Foundation',
+    specialization: 'AI Core Principles, Cognitive Technologies, Business Applications & Workflow Integration',
+    issuer: 'TCS iON',
+    code: '02',
+    skills: ['AI Foundation', 'Cognitive Systems', 'Applied AI', 'Data Analysis'],
+  },
+  {
+    id: 'crio-java',
+    title: 'Java Developer',
+    specialization: 'Core Java, OOP Concepts, Collections & Real-World Application Design',
+    issuer: 'Crio.Do',
+    code: '03',
+    skills: ['Java', 'OOP', 'Collections', 'Design Patterns'],
+  },
+  {
+    id: 'tcs-comm',
+    title: 'Business Communication',
+    specialization: 'Professional Workplace Communication, Cross-Functional Teamwork & Reporting',
+    issuer: 'TCS iON',
+    code: '04',
+    skills: ['Professional Writing', 'Verbal Presentation', 'Collaboration'],
+  },
+  {
+    id: 'jpmorgan-excel',
+    title: 'Financial Data & Excel Analysis',
+    specialization: 'Advanced Spreadsheet Modeling, Analytical Data Formulas & Dashboards',
+    issuer: 'JPMorgan Chase & Co.',
+    code: '05',
+    skills: ['Data Analysis', 'Excel Modeling', 'Quantitative Methods'],
+  },
+  {
+    id: 'tcs-dataplus',
+    title: 'TCS MasterCraft™ DataPlus',
+    specialization: 'Data Management, Data Quality Concepts, Validation & Schema Governance',
+    issuer: 'TCS MasterCraft',
+    code: '06',
+    skills: ['Data Quality', 'Data Governance', 'Schema Design'],
+  },
+  {
+    id: 'infosys-python',
+    title: 'Python Fundamentals',
+    specialization: 'Python Core Syntax, Algorithmic Problem Solving & Data Handling',
+    issuer: 'Infosys Springboard',
+    code: '07',
+    skills: ['Python', 'Problem Solving', 'Data Manipulation'],
+  },
+  {
+    id: 'mastercard-cyber',
+    title: 'Cybersecurity Job Simulation',
+    specialization: 'Security Awareness, Threat Surface Analysis & Incident Evaluation',
+    issuer: 'Mastercard / Forage',
+    code: '08',
+    skills: ['Security Heuristics', 'Access Control', 'Risk Mitigation'],
+  },
+];
+
+export const journeyData: JourneyStep[] = [
+  {
+    step: 1,
+    title: 'Learned Core Java & MySQL',
+    period: 'Foundation Phase',
+    description:
+      'Mastered object-oriented programming principles, memory management, Java Collections, and relational database schema design with MySQL.',
+    tech: ['Java', 'OOP', 'MySQL', 'Relational Schemas'],
+  },
+  {
+    step: 2,
+    title: 'Built Mini Projects',
+    period: 'Hands-on Practice',
+    description:
+      'Applied core concepts to build console and desktop utility tools, solidifying control structures, input validation, and file handling.',
+    tech: ['Algorithms', 'File I/O', 'Console Systems', 'Unit Testing'],
+  },
+  {
+    step: 3,
+    title: 'Hostel Management System',
+    period: 'End-to-End Applications',
+    description:
+      'Engineered multi-tier management systems featuring database persistence, authentication logic, room allocation, and fee tracking.',
+    tech: ['Java Backend', 'MongoDB', 'Bootstrap', 'CRUD APIs'],
+  },
+  {
+    step: 4,
+    title: 'Completed Industry Certifications',
+    period: 'Skill Verification',
+    description:
+      'Earned certifications from Cisco Networking Academy, TCS iON, Crio.Do, JPMorgan, Infosys, and Mastercard.',
+    tech: ['Cisco AI', 'TCS AI Foundation', 'Crio.Do Java', 'JPMorgan'],
+  },
+  {
+    step: 5,
+    title: 'Pursuing MCA Degree',
+    period: 'Post-Graduation Milestone',
+    description:
+      'Deepening advanced computer science concepts, distributed systems, system analysis, and software development methodologies.',
+    tech: ['Advanced CS', 'Distributed Computing', 'Software Architecture'],
+  },
+  {
+    step: 6,
+    title: 'Building Java Full-Stack Skills & AI Integration',
+    period: 'Specialization',
+    description:
+      'Architecting Spring Boot micro-services, RESTful interfaces, React integration, and AI detection tooling (ScamShield).',
+    tech: ['Spring Boot', 'React', 'Spring Security', 'JWT', 'REST APIs', 'AI APIs'],
+  },
+  {
+    step: 7,
+    title: 'Looking for Software Developer Opportunities',
+    period: 'Present Goal',
+    description:
+      'Actively seeking internship and entry-level Software Developer / Java Full-Stack roles to contribute high-impact code to engineering teams.',
+    tech: ['Full-Stack Engineering', 'Production Readiness', 'Team Collaboration'],
+  },
+];
